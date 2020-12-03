@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.wrapper{
+  padding: 4em, 4em;
+  background-color: lightpink;
+}
+button {
+  padding: 1em, 1em;
+}
