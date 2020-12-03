@@ -3,21 +3,58 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./resources/styles.css">
+
+    <base href="/">
+    <title>Howler Music player</title>
+    <link rel="stylesheet" type="text/css" href="./resources/styles.css">
+    <script data-main="public/main" src="./public/require.js"></script>
   </head>
-  <body>
+  <body >
     <h1>Welcome to Howls</h1>
     <div class="wrapper">
-      <div><button name="">first</button></div>
-      <div><button name="">second</button></div>
-      <div><button name="">third</button></div>
-      <div><button name="">fourth</button></div>
-      <div><button name="">fifth</button></div>
-      <div><button name="">sixth</button></div>
+      <div><button name="first">first</button></div>
+      <div><button name="second">second</button></div>
+      <div><button name="third">third</button></div>
+      <div><button name="fourth">fourth</button></div>
+      <div><button name="fifth">fifth</button></div>
+      <div><button name="sixth">sixth</button></div>
     </div>
-    <script src="./app.js" async defer></script>
+    <!-- Top Info -->
+    <div class="instructions" style="background-color: rgb(37, 112, 177);">
+      <span class="title">Audio Sprite Visual</span><br>
+      <span class="description">Click a section of the waveform to play the sprite.</span>
+    </div>
+    
+    <!-- Waveform -->
+    <div id="waveform"></div>
+    
+    <!-- Sprite Click Areas -->
+    <div class="sprites">
+      <div id="sprite0" class="sprite">
+        <div class="sprite-label">one</div>
+      </div>
+      <div id="sprite1" class="sprite">
+        <div class="sprite-label">two</div>
+      </div>
+      <div id="sprite2" class="sprite">
+        <div class="sprite-label">three</div>
+      </div>
+      <div id="sprite3" class="sprite">
+        <div class="sprite-label">four</div>
+      </div>
+      <div id="sprite4" class="sprite">
+        <div class="sprite-label">five</div>
+      </div>
+      <div id="sprite5" class="sprite">
+        <div class="sprite-label">beat</div>
+      </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="./public/howler.core.js"></script>
+    <script src="./public/sprite.js"></script>
+    <script src="./public/index.js" async defer></script>
   </body>
 </html>

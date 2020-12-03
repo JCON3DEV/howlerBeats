@@ -1,0 +1,23 @@
+{
+  "name": "howlerbeats",
+  "version": "1.0.0",
+  "description": "practice with howlerJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JCON3DEV/howlerBeats.git"
+  },
+  "author": "jordan heasman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JCON3DEV/howlerBeats/issues"
+  },
+  "homepage": "https://github.com/JCON3DEV/howlerBeats#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "requirejs": "^2.3.6"
+  }
+}
